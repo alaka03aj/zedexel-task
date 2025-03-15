@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 const Sidebar = () => {
@@ -7,17 +8,17 @@ const Sidebar = () => {
 
     //   add actual icons
     const navItems = [
-        { name: 'Dashboard', path: '/', icon: '📊' },
-        { name: 'Projects', path: '/projects', icon: '📁' },
-        { name: 'Venues', path: '/venues', icon: '🏢' },
-        { name: 'Clients', path: '/clients', icon: '👥' },
+        { name: 'Explore', path: '/explore', icon: '/explore.png' },
+        { name: 'Contactors', path: '/contractors', icon: '/contractors.png' },
+        { name: 'Projects', path: '/', icon: '/projects.png' },
+        { name: 'Users', path: '/users', icon: '/users.png' },
     ]
 
     return (
         <div className='p-2 h-screen'>
             <div className="w-1//12 bg-navy h-full p-4 rounded-2xl">
-                <div className="text-white text-xl font-bold mb-8">
-                    Exhibition Manager
+                <div className="text-white text-xl font-bold mb-8 text-center">
+                    Logo
                 </div>
                 <nav>
                     {navItems.map((item) => (
@@ -27,18 +28,18 @@ const Sidebar = () => {
                             className={`
               block px-4 py-2 mb-2 rounded
               ${pathname === item.path
-                                    ? 'bg-blue-600 text-white'
+                                    ? ' text-white'
                                     : 'text-gray-300 hover:bg-gray-700'}
             `}
                         > 
                             <div className='flex flex-col items-center'>
-                                <p>{item.icon}</p>
+                                <Image src={item.icon} width="32" height="32" alt='navbar icons'></Image>
                                 <p>{item.name}</p>
                             </div>
                         </Link>
                     ))}
                 </nav>
-            </div>
+            </div> 
         </div>
     )
 }
