@@ -83,7 +83,7 @@ const ProjectsPage = () => {
                 className="hover:bg-gray-50 cursor-pointer transition-colors"
                 onClick={() => router.push(`/projects/${project.id}`)}
               >
-                <td className="px-6 py-4 whitespace-nowrap">{project.projectName}</td>
+                <td className="px-6 py-4 whitespace-nowrap">{project.name}</td>
                 <td className="px-6 py-4 whitespace-nowrap">{project.startDate}</td>
                 <td className="px-6 py-4 whitespace-nowrap">{project.endDate}</td>
                 <td className="px-6 py-4 whitespace-nowrap">
