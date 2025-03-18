@@ -111,8 +111,8 @@ const ProjectsPage = () => {
               onClick={() => setCurrentPage(page)}
               className={`px-3 py-1 rounded ${
                 currentPage === page
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-200 hover:bg-gray-300 text-gray-700'
+                  ? 'bg-navy text-white'
+                  : 'bg-gray-200 hover:bg-gray-300 text-gray'
               }`}
             >
               {page}

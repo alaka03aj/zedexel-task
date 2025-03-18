@@ -35,7 +35,7 @@ export const projects: Project[] = [
             venueStandNumber: "D-123",
             totalSqMtr: "150"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "TC-2023-001",
@@ -53,7 +53,7 @@ export const projects: Project[] = [
             venueStandNumber: "A-456",
             totalSqMtr: "200"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "TC-2022-002",
@@ -71,7 +71,7 @@ export const projects: Project[] = [
             venueStandNumber: "E-789",
             totalSqMtr: "175"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "VT-2024-001",
@@ -89,7 +89,7 @@ export const projects: Project[] = [
             venueStandNumber: "D-234",
             totalSqMtr: "300"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "PG-2024-001",
@@ -107,7 +107,7 @@ export const projects: Project[] = [
             venueStandNumber: "C-567",
             totalSqMtr: "225"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "VT-2021-001",
@@ -125,7 +125,7 @@ export const projects: Project[] = [
             venueStandNumber: "A-890",
             totalSqMtr: "180"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "SI-2021-001",
@@ -143,7 +143,7 @@ export const projects: Project[] = [
             venueStandNumber: "D-345",
             totalSqMtr: "250"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "QS-2024-001",
@@ -161,7 +161,7 @@ export const projects: Project[] = [
             venueStandNumber: "E-678",
             totalSqMtr: "275"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "IL-2021-001",
@@ -179,7 +179,7 @@ export const projects: Project[] = [
             venueStandNumber: "D-901",
             totalSqMtr: "160"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "NS-2021-001",
@@ -197,7 +197,7 @@ export const projects: Project[] = [
             venueStandNumber: "C-234",
             totalSqMtr: "190"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "FE-2020-001",
@@ -215,7 +215,7 @@ export const projects: Project[] = [
             venueStandNumber: "A-567",
             totalSqMtr: "220"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "TC-2023-002",
@@ -233,7 +233,7 @@ export const projects: Project[] = [
             venueStandNumber: "B-890",
             totalSqMtr: "280"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "IL-2020-001",
@@ -251,7 +251,7 @@ export const projects: Project[] = [
             venueStandNumber: "A-123",
             totalSqMtr: "240"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "SI-2020-001",
@@ -269,7 +269,7 @@ export const projects: Project[] = [
             venueStandNumber: "A-456",
             totalSqMtr: "320"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "AD-2022-001",
@@ -287,7 +287,7 @@ export const projects: Project[] = [
             venueStandNumber: "B-789",
             totalSqMtr: "270"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "SI-2023-002",
@@ -305,7 +305,7 @@ export const projects: Project[] = [
             venueStandNumber: "B-012",
             totalSqMtr: "230"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "TC-2021-001",
@@ -323,7 +323,7 @@ export const projects: Project[] = [
             venueStandNumber: "C-345",
             totalSqMtr: "290"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "NS-2020-001",
@@ -341,7 +341,7 @@ export const projects: Project[] = [
             venueStandNumber: "E-678",
             totalSqMtr: "210"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "VT-2021-002",
@@ -359,7 +359,7 @@ export const projects: Project[] = [
             venueStandNumber: "C-901",
             totalSqMtr: "260"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     },
     {
         id: "FE-2025-001",
@@ -377,6 +377,6 @@ export const projects: Project[] = [
             venueStandNumber: "D-234",
             totalSqMtr: "340"
         },
-        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png"]
     }
 ];
