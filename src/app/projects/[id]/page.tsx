@@ -1,23 +1,15 @@
-// app/projects/[id]/page.tsx
+// src/app/projects/[id]/page.tsx
 
 import { projects } from '@/data/projects'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
-
-export async function generateStaticParams() {
-  return projects.map((project) => ({
-    id: project.id,
-  }))
-}
-
-interface PageProps {
-  params: {
-    id: string
+type Props = {
+    params: Promise<{ id: string }>
   }
-}
 
-export default async function ProjectPage({ params }: PageProps) {
-  const project = await findProject(params.id)
+export default async function ProjectPage({ params }: Props) {
+    const {id} = await params
+  const project = projects.find((p) => p.id === id)
 
   if (!project) {
     notFound()
@@ -26,11 +18,11 @@ export default async function ProjectPage({ params }: PageProps) {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className=" bg-white">
+      <div className="bg-white">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <h1 className="text-2xl font-bold text-gray-900">{project.name}</h1>
-            <button className="flex items-center gap-2 px-4 py-2 bg-navy text-white rounded-md hover:bg-navy transition-colors">
+            <button className="flex items-center gap-2 px-4 py-2 bg-navy text-white rounded-md hover:bg-navy/90 transition-colors">
               <span>Sync</span>
             </button>
           </div>
@@ -38,7 +30,7 @@ export default async function ProjectPage({ params }: PageProps) {
       </div>
 
       {/* Navigation */}
-      <div className=" bg-white">
+      <div className="bg-white">
         <div className="container mx-auto px-4">
           <nav className="flex gap-8">
             <a 
@@ -138,14 +130,3 @@ export default async function ProjectPage({ params }: PageProps) {
   )
 }
 
-async function findProject(id: string) {
-  return projects.find((p) => p.id === id)
-}
-
-export function Loading() {
-  return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-indigo-600"></div>
-    </div>
-  )
-}

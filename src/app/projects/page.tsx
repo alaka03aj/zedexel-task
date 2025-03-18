@@ -1,9 +1,25 @@
-// app/projects/page.tsx
 'use client';
 
 import { useState, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
-import { projects } from '@/data/projects';
+import { projects, Project } from '@/data/projects';
+
+// Define status type
+type ProjectStatus = 
+  | 'Design Submitted'
+  | 'Project Confirmed'
+  | 'Pending'
+  | 'In progress'
+  | 'Cancelled';
+
+// Define status colors mapping
+const statusColors: Record<ProjectStatus, string> = {
+  'Design Submitted': 'bg-green-100 text-green-800',
+  'Project Confirmed': 'bg-yellow-100 text-yellow-800',
+  'Pending': 'bg-red-100 text-red-800',
+  'In progress': 'bg-yellow-100 text-yellow-800',
+  'Cancelled': 'bg-red-100 text-red-800',
+};
 
 const ProjectsPage = () => {
   const router = useRouter();
@@ -13,9 +29,9 @@ const ProjectsPage = () => {
 
   // Filter projects based on search
   const filteredProjects = useMemo(() => {
-    return projects.filter((project) =>
+    return projects.filter((project: Project) =>
       Object.values(project).some((value) =>
-        value.toString().toLowerCase().includes(search.toLowerCase())
+        value?.toString().toLowerCase().includes(search.toLowerCase())
       )
     );
   }, [search]);
@@ -29,15 +45,8 @@ const ProjectsPage = () => {
   // Calculate total pages
   const totalPages = Math.ceil(filteredProjects.length / itemsPerPage);
 
-  const getStatusColor = (status: string) => {
-    const colors = {
-      'Design Submitted': 'bg-green-100 text-green-800',
-      'Project Confirmed': 'bg-yellow-100 text-yellow-800',
-      'Pending': 'bg-red-100 text-red-800',
-      'In progress': 'bg-yellow-100 text-yellow-800',
-      'Cancelled': 'bg-red-100 text-red-800',
-    };
-    return colors[status] || 'bg-gray-100 text-gray-800';
+  const getStatusColor = (status: ProjectStatus): string => {
+    return statusColors[status] || 'bg-gray-100 text-gray-800';
   };
 
   return (
@@ -50,7 +59,7 @@ const ProjectsPage = () => {
             placeholder="Search by location, user..."
             className="px-4 py-2 border rounded-lg w-64"
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
           />
         </div>
       </div>
@@ -77,7 +86,7 @@ const ProjectsPage = () => {
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
-            {currentProjects.map((project) => (
+            {currentProjects.map((project: Project) => (
               <tr
                 key={project.id}
                 className="hover:bg-gray-50 cursor-pointer transition-colors"
@@ -87,7 +96,7 @@ const ProjectsPage = () => {
                 <td className="px-6 py-4 whitespace-nowrap">{project.startDate}</td>
                 <td className="px-6 py-4 whitespace-nowrap">{project.endDate}</td>
                 <td className="px-6 py-4 whitespace-nowrap">
-                  <span className={`px-2 py-1 rounded-full text-xs ${getStatusColor(project.status)}`}>
+                  <span className={`px-2 py-1 rounded-full text-xs ${getStatusColor(project.status as ProjectStatus)}`}>
                     {project.status}
                   </span>
                 </td>
@@ -112,7 +121,7 @@ const ProjectsPage = () => {
               className={`px-3 py-1 rounded ${
                 currentPage === page
                   ? 'bg-navy text-white'
-                  : 'bg-gray-200 hover:bg-gray-300 text-slate'
+                  : 'bg-gray-200 hover:bg-gray-300 text-gray'
               }`}
             >
               {page}

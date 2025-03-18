@@ -9,12 +9,10 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                primary: {
-                    navy: '#0B083E',
-                    slate: '#F7F7F9',
-                    white: '#FFFFFF',
-                    gray: '#8B8BA2',
-                }
+                navy: '#0B083E',
+                slate: '#F7F7F9',
+                white: '#FFFFFF',
+                gray: '#8B8BA2',
             }
         },
     },

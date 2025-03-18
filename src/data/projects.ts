@@ -1,10 +1,19 @@
+// data/projects.ts
+
+export type ProjectStatus = 
+  | 'Design Submitted'
+  | 'Project Confirmed'
+  | 'Pending'
+  | 'In progress'
+  | 'Cancelled'
+  | 'Admin Approved';
 
 export interface Project {
     id: string;
     name: string;
     startDate: string;
     endDate: string;
-    status: string;
+    status: ProjectStatus;
     venue: string;
     logo?: string;
     details: {

@@ -1,4 +1,4 @@
-// app/projects/[id]/loading.tsx
+// src/app/projects/[id]/loading.tsx
 
 export default function Loading() {
     return (
