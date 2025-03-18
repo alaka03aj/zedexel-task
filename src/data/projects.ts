@@ -6,7 +6,7 @@ export const projects: Project[] = [
         endDate: "2023-02-28",
         status: "Design Submitted",
         venue: "Innovation Hub D",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Innovation Hub",
             venueCity: "San Francisco",
@@ -15,7 +15,7 @@ export const projects: Project[] = [
             venueStandNumber: "D-123",
             totalSqMtr: "150"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "TC-2023-001",
@@ -24,7 +24,7 @@ export const projects: Project[] = [
         endDate: "2023-11-15",
         status: "Project Confirmed",
         venue: "Convention Center A",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Convention Center",
             venueCity: "Las Vegas",
@@ -33,7 +33,7 @@ export const projects: Project[] = [
             venueStandNumber: "A-456",
             totalSqMtr: "200"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "TC-2022-002",
@@ -42,7 +42,7 @@ export const projects: Project[] = [
         endDate: "2022-10-14",
         status: "Pending",
         venue: "Tech Park E",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Tech Park",
             venueCity: "Boston",
@@ -51,7 +51,7 @@ export const projects: Project[] = [
             venueStandNumber: "E-789",
             totalSqMtr: "175"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "VT-2024-001",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
         endDate: "2024-10-19",
         status: "Project Confirmed",
         venue: "Innovation Hub D",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Innovation Hub",
             venueCity: "Chicago",
@@ -69,7 +69,7 @@ export const projects: Project[] = [
             venueStandNumber: "D-234",
             totalSqMtr: "300"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "PG-2024-001",
@@ -78,7 +78,7 @@ export const projects: Project[] = [
         endDate: "2024-12-31",
         status: "Design Submitted",
         venue: "Trade Fair Arena C",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Trade Fair Arena",
             venueCity: "Miami",
@@ -87,7 +87,7 @@ export const projects: Project[] = [
             venueStandNumber: "C-567",
             totalSqMtr: "225"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "VT-2021-001",
@@ -96,7 +96,7 @@ export const projects: Project[] = [
         endDate: "2021-09-19",
         status: "Pending",
         venue: "Convention Center A",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Convention Center",
             venueCity: "Seattle",
@@ -105,7 +105,7 @@ export const projects: Project[] = [
             venueStandNumber: "A-890",
             totalSqMtr: "180"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "SI-2021-001",
@@ -114,7 +114,7 @@ export const projects: Project[] = [
         endDate: "2021-01-17",
         status: "Pending",
         venue: "Innovation Hub D",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Innovation Hub",
             venueCity: "Austin",
@@ -123,7 +123,7 @@ export const projects: Project[] = [
             venueStandNumber: "D-345",
             totalSqMtr: "250"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "QS-2024-001",
@@ -132,7 +132,7 @@ export const projects: Project[] = [
         endDate: "2024-08-08",
         status: "Design Submitted",
         venue: "Tech Park E",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Tech Park",
             venueCity: "Denver",
@@ -141,7 +141,7 @@ export const projects: Project[] = [
             venueStandNumber: "E-678",
             totalSqMtr: "275"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "IL-2021-001",
@@ -150,7 +150,7 @@ export const projects: Project[] = [
         endDate: "2021-02-02",
         status: "Project Confirmed",
         venue: "Innovation Hub D",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Innovation Hub",
             venueCity: "Portland",
@@ -159,7 +159,7 @@ export const projects: Project[] = [
             venueStandNumber: "D-901",
             totalSqMtr: "160"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "NS-2021-001",
@@ -168,7 +168,7 @@ export const projects: Project[] = [
         endDate: "2021-04-19",
         status: "Admin Approved",
         venue: "Trade Fair Arena C",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Trade Fair Arena",
             venueCity: "Houston",
@@ -177,7 +177,7 @@ export const projects: Project[] = [
             venueStandNumber: "C-234",
             totalSqMtr: "190"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "FE-2020-001",
@@ -186,7 +186,7 @@ export const projects: Project[] = [
         endDate: "2020-09-18",
         status: "Pending",
         venue: "Convention Center A",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Convention Center",
             venueCity: "Dallas",
@@ -195,7 +195,7 @@ export const projects: Project[] = [
             venueStandNumber: "A-567",
             totalSqMtr: "220"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "TC-2023-002",
@@ -204,7 +204,7 @@ export const projects: Project[] = [
         endDate: "2023-01-24",
         status: "Project Confirmed",
         venue: "Expo Hall B",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Expo Hall",
             venueCity: "Phoenix",
@@ -213,7 +213,7 @@ export const projects: Project[] = [
             venueStandNumber: "B-890",
             totalSqMtr: "280"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "IL-2020-001",
@@ -222,7 +222,7 @@ export const projects: Project[] = [
         endDate: "2020-02-17",
         status: "Admin Approved",
         venue: "Convention Center A",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Convention Center",
             venueCity: "San Diego",
@@ -231,7 +231,7 @@ export const projects: Project[] = [
             venueStandNumber: "A-123",
             totalSqMtr: "240"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "SI-2020-001",
@@ -240,7 +240,7 @@ export const projects: Project[] = [
         endDate: "2020-09-05",
         status: "Design Submitted",
         venue: "Convention Center A",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Convention Center",
             venueCity: "Atlanta",
@@ -249,7 +249,7 @@ export const projects: Project[] = [
             venueStandNumber: "A-456",
             totalSqMtr: "320"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "AD-2022-001",
@@ -258,7 +258,7 @@ export const projects: Project[] = [
         endDate: "2022-10-13",
         status: "Project Confirmed",
         venue: "Expo Hall B",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Expo Hall",
             venueCity: "Orlando",
@@ -267,7 +267,7 @@ export const projects: Project[] = [
             venueStandNumber: "B-789",
             totalSqMtr: "270"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "SI-2023-002",
@@ -276,7 +276,7 @@ export const projects: Project[] = [
         endDate: "2023-02-17",
         status: "Design Submitted",
         venue: "Expo Hall B",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Expo Hall",
             venueCity: "Minneapolis",
@@ -285,7 +285,7 @@ export const projects: Project[] = [
             venueStandNumber: "B-012",
             totalSqMtr: "230"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "TC-2021-001",
@@ -294,7 +294,7 @@ export const projects: Project[] = [
         endDate: "2021-05-02",
         status: "Project Confirmed",
         venue: "Trade Fair Arena C",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Trade Fair Arena",
             venueCity: "Detroit",
@@ -303,7 +303,7 @@ export const projects: Project[] = [
             venueStandNumber: "C-345",
             totalSqMtr: "290"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "NS-2020-001",
@@ -312,7 +312,7 @@ export const projects: Project[] = [
         endDate: "2020-03-25",
         status: "Design Submitted",
         venue: "Tech Park E",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Tech Park",
             venueCity: "Raleigh",
@@ -321,7 +321,7 @@ export const projects: Project[] = [
             venueStandNumber: "E-678",
             totalSqMtr: "210"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "VT-2021-002",
@@ -330,7 +330,7 @@ export const projects: Project[] = [
         endDate: "2021-02-21",
         status: "Project Confirmed",
         venue: "Trade Fair Arena C",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Trade Fair Arena",
             venueCity: "Austin",
@@ -339,7 +339,7 @@ export const projects: Project[] = [
             venueStandNumber: "C-901",
             totalSqMtr: "260"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     },
     {
         id: "FE-2025-001",
@@ -348,7 +348,7 @@ export const projects: Project[] = [
         endDate: "2025-01-29",
         status: "Project Confirmed",
         venue: "Innovation Hub D",
-        logo: "/public/logo.png",
+        logo: "/logo.png",
         details: {
             venueName: "Innovation Hub",
             venueCity: "Seattle",
@@ -357,6 +357,6 @@ export const projects: Project[] = [
             venueStandNumber: "D-234",
             totalSqMtr: "340"
         },
-        images: ["/public/3d-ne", "/public/3d-two", "/public/3d-three"]
+        images: ["/3d-one.png", "/3d-two.png", "/3d-three.png", "/3d-one.png"]
     }
 ];

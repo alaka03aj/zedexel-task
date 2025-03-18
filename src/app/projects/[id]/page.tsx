@@ -1,72 +1,101 @@
-// app/projects/[id]/page.tsx
-'use client';
+// app/[id]/page.tsx
 
-import { useParams, useRouter } from 'next/navigation';
-import { projects } from '@/data/projects';
+import { projects } from '@/data/projects'
+import Image from 'next/image'
+import { notFound } from 'next/navigation'
 
-export default function ProjectPage() {
-  const params = useParams();
-  const router = useRouter();
-  
-  const project = projects.find((p) => p.id === params.id);
+export async function generateStaticParams() {
+  return projects.map((project) => ({
+    id: project.id,
+  }))
+}
+
+export default function ProjectPage({ params }: { params: { id: string } }) {
+  const project = projects.find((p) => p.id === params.id)
 
   if (!project) {
-    return (
-      <div className="p-6">
-        <div className="bg-red-50 text-red-600 p-4 rounded-lg">
-          Project not found
-        </div>
-      </div>
-    );
+    notFound()
   }
 
   return (
-    <div className="p-6">
-      <button
-        onClick={() => router.back()}
-        className="mb-6 text-blue-600 hover:text-blue-800 flex items-center"
-      >
-        <svg 
-          className="w-4 h-4 mr-2" 
-          fill="none" 
-          stroke="currentColor" 
-          viewBox="0 0 24 24"
-        >
-          <path 
-            strokeLinecap="round" 
-            strokeLinejoin="round" 
-            strokeWidth={2} 
-            d="M10 19l-7-7m0 0l7-7m-7 7h18" 
-          />
-        </svg>
-        Back to Projects
-      </button>
-      
-      <div className="bg-white rounded-lg shadow p-6">
-        <h1 className="text-2xl font-bold mb-6">{project.name}</h1>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <h2 className="text-sm font-medium text-gray-500">Start Date</h2>
-            <p className="mt-1 text-lg">{project.startDate}</p>
+    <div className="container mx-auto p-4">
+      <div className="flex items-center justify-between mb-8">
+        <h1 className="text-2xl font-bold">{project.name}</h1>
+        <div className="flex items-center gap-2">
+          <button className="px-4 py-2 bg-indigo-600 text-white rounded">
+            Sync
+          </button>
+        </div>
+      </div>
+
+      <div className="grid grid-rows-1 md:grid-cols-2 gap-8">
+        <div className="space-y-6">
+          <div className="flex items-center gap-4">
+            <Image
+              src={project.logo || '/placeholder-logo.png'}
+              alt="Company Logo"
+              width={100}
+              height={100}
+              className="rounded-full"
+            />
+            <div>
+              <h2 className="text-xl font-semibold">Project Details</h2>
+              <p className="text-gray-600">Status: {project.status}</p>
+            </div>
           </div>
-          
-          <div>
-            <h2 className="text-sm font-medium text-gray-500">End Date</h2>
-            <p className="mt-1 text-lg">{project.endDate}</p>
+
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <h3 className="font-medium">Start date</h3>
+              <p>{project.startDate}</p>
+            </div>
+            <div>
+              <h3 className="font-medium">End date</h3>
+              <p>{project.endDate}</p>
+            </div>
+            <div>
+              <h3 className="font-medium">Venue name</h3>
+              <p>{project.details.venueName}</p>
+            </div>
+            <div>
+              <h3 className="font-medium">Venue city</h3>
+              <p>{project.details.venueCity}</p>
+            </div>
+            <div>
+              <h3 className="font-medium">Venue country</h3>
+              <p>{project.details.venueCountry}</p>
+            </div>
+            <div>
+              <h3 className="font-medium">Venue hall number</h3>
+              <p>{project.details.venueHallNumber}</p>
+            </div>
+            <div>
+              <h3 className="font-medium">Stand number</h3>
+              <p>{project.details.venueStandNumber}</p>
+            </div>
+            <div>
+              <h3 className="font-medium">Total sq. mtr</h3>
+              <p>{project.details.totalSqMtr}</p>
+            </div>
           </div>
-          
-          <div>
-            <h2 className="text-sm font-medium text-gray-500">Status</h2>
-            <p className="mt-1 text-lg">{project.status}</p>
-          </div>
-          
-          <div>
-            <h2 className="text-sm font-medium text-gray-500">Venue</h2>
-            <p className="mt-1 text-lg">{project.venue}</p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-xl font-semibold">Project Images</h2>
+          <div className="grid grid-cols-2 gap-4">
+            {project.images.map((image, index) => (
+              <div key={index} className="relative aspect-video">
+                <Image
+                  src={image}
+                  alt={`Project image ${index + 1}`}
+                  fill
+                  className="object-cover rounded"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
