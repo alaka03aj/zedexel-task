@@ -1,4 +1,4 @@
-// app/[id]/page.tsx
+// app/projects/[id]/page.tsx
 
 import { projects } from '@/data/projects'
 import Image from 'next/image'
@@ -10,8 +10,15 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = projects.find((p) => p.id === params.id)
+interface PageProps {
+  params: {
+    id: string
+  }
+}
+
+export default async function ProjectPage({ params }: PageProps) {
+  // Add async to the function
+  const project = await findProject(params.id) // Use a separate async function to find the project
 
   if (!project) {
     notFound()
@@ -28,7 +35,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
         </div>
       </div>
 
-      <div className="grid grid-rows-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="space-y-6">
           <div className="flex items-center gap-4">
             <Image
@@ -98,4 +105,10 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
       </div>
     </div>
   )
+}
+
+// Separate async function to find the project
+async function findProject(id: string) {
+  // Simulate async operation
+  return projects.find((p) => p.id === id)
 }

@@ -1,3 +1,23 @@
+
+export interface Project {
+    id: string;
+    name: string;
+    startDate: string;
+    endDate: string;
+    status: string;
+    venue: string;
+    logo?: string;
+    details: {
+        venueName: string;
+        venueCity: string;
+        venueCountry: string;
+        venueHallNumber: string;
+        venueStandNumber: string;
+        totalSqMtr: string;
+    };
+    images: string[];
+}
+
 export const projects: Project[] = [
     {
         id: "SI-2023-001",
